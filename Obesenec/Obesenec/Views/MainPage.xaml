@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="clr-namespace:Obesenec.ViewModels"
+             mc:Ignorable="d"
+             x:Class="Obesenec.Model.MainPage"
+             BackgroundColor="#121212">
+    
+    <ContentPage.BindingContext>
+        <vm:MainViewModel/>
+    </ContentPage.BindingContext>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="80" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+        <Image Source= "{Binding ImageSource}"/>
+        </Grid>
+        <Grid Grid.Row="1" >
+            <CollectionView ItemsSource="{Binding List}" 
+                            ItemsLayout="HorizontalList"
+                            VerticalOptions="CenterAndExpand">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid  Padding="15" Margin="5, 0, 0, 5">
+                            <Label HorizontalOptions="CenterAndExpand"
+                                Text="{Binding Text}"
+                                TextColor="White" 
+                                FontAttributes="Bold"
+                                FontSize="Title"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition  Width="*"/>
+                <ColumnDefinition  Width="*"/>
+                <ColumnDefinition  Width="*"/>
+                <ColumnDefinition  Width="*"/>
+                <ColumnDefinition  Width="*"/>
+                <ColumnDefinition  Width="*"/>
+                <ColumnDefinition  Width="*"/>
+                <ColumnDefinition  Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button 
+                Grid.Row="0"
+                Grid.Column="0"   
+                HorizontalOptions="Center"
+                WidthRequest="40" 
+                HeightRequest="40" 
+                BorderRadius="10"
+                Text="A" 
+                Command="{Binding CharacterPressedCommand}"
+                CommandParameter="A"
+                TextColor="White"   
+                BackgroundColor="#1E1E1E"
+                Margin="3"
+                />
+            <Button 
+                Grid.Row="0 "
+                Grid.Column="1"   
+                HorizontalOptions="Center"
+                WidthRequest="40" 
+                HeightRequest="40" 
+                BorderRadius="10"
+                Text="B" 
+                Command="{Binding CharacterPressedCommand}"
+                CommandParameter="B"
+                TextColor="White"   
+                BackgroundColor="#1E1E1E"
+                Margin="3"
+                />
+            <Button 
+                Grid.Row="0"
+                Grid.Column="2"   
+                HorizontalOptions="Center"
+                WidthRequest="40" 
+                HeightRequest="40" 
+                BorderRadius="10"
+                Text="C"
+                Command="{Binding CharacterPressedCommand}"
+                CommandParameter="C"
+                TextColor="White"   
+                BackgroundColor="#1E1E1E"
+                Margin="3"    
+                />
+            <Button 
+                Grid.Row="0"
+                Grid.Column="3"   
+                HorizontalOptions="Center"
+                WidthRequest="40" 
+                HeightRequest="40" 
+                BorderRadius="10"
+                Text="D"
+                Command="{Binding CharacterPressedCommand}"
+                CommandParameter="D"
+                TextColor="White"   
+                BackgroundColor="#1E1E1E"
+                Margin="3"
+                />
+            <Button 
+                Grid.Row="0"
+                Grid.Column="4"   
+                HorizontalOptions="Center"
+                WidthRequest="40" 
+                HeightRequest="40" 
+                BorderRadius="10"
+                Text="E"
+                Command="{Binding CharacterPressedCommand}"
+                CommandParameter="E"
+                TextColor="White"   
+                BackgroundColor="#1E1E1E"
+                Margin="3"    
+                />
+            <Button 
+                Grid.Row="0"
+                Grid.Column="5"   
+                HorizontalOptions="Center"
+                WidthRequest="40" 
+                HeightRequest="40" 
+                BorderRadius="10"
+                Text="F"
+                Command="{Binding CharacterPressedCommand}"
+                CommandParameter="F"
+                TextColor="White"   
+                BackgroundColor="#1E1E1E"
+                Margin="3"
+                 />
+            <Button 
+                Grid.Row="0"
+                Grid.Column="6"   
+                HorizontalOptions="Center"
+                WidthRequest="40" 
+                HeightRequest="40" 
+                BorderRadius="10"
+                Text="G" 
+                Command="{Binding CharacterPressedCommand}"
+                CommandParameter="G"
+                TextColor="White"   
+                BackgroundColor="#1E1E1E"
+                 Margin="3"
+                 />
+            <Button 
+                Grid.Row="0"
+                Grid.Column="7"   
+                HorizontalOptions="Center"
+                WidthRequest="40" 
+                HeightRequest="40" 
+                BorderRadius="10"
+                Text="H"
+                Command="{Binding CharacterPressedCommand}"
+                CommandParameter="H"
+                TextColor="White"   
+                 BackgroundColor="#1E1E1E"
+                Margin="3"
+                 />
+            <Button 
+                Grid.Row="1"
+                Grid.Column="0"   
+                HorizontalOptions="Center"
+                WidthRequest="40" 
+                HeightRequest="40" 
+                BorderRadius="10"
+                Text="I"
+                Command="{Binding CharacterPressedCommand}"
+                CommandParameter="I"
+                TextColor="White"   
+                 BackgroundColor="#1E1E1E"
+                Margin="3"    
+                 />
+            <Button 
+                Grid.Row="1"
+                Grid.Column="1"   
+                HorizontalOptions="Center"
+                WidthRequest="40" 
+                HeightRequest="40" 
+                BorderRadius="10"
+                Text="J"
+                Command="{Binding CharacterPressedCommand}"
+                CommandParameter="J"
+                TextColor="White"   
+                BackgroundColor="#1E1E1E"
+                Margin="3"   
+                 />
+            <Button 
+                Grid.Row="1"
+                Grid.Column="2"   
+                HorizontalOptions="Center"
+                WidthRequest="40" 
+                HeightRequest="40" 
+                BorderRadius="10"
+                Text="K"
+                Command="{Binding CharacterPressedCommand}"
+                CommandParameter="K"
+                TextColor="White"   
+                 BackgroundColor="#1E1E1E"
+                Margin="3"   
+                 />
+            <Button 
+                Grid.Row="1"
+                Grid.Column="3"   
+                HorizontalOptions="Center"
+                WidthRequest="40" 
+                HeightRequest="40" 
+                BorderRadius="10"
+                Text="L"
+                Command="{Binding CharacterPressedCommand}"
+                CommandParameter="L"
+                TextColor="White"   
+                 BackgroundColor="#1E1E1E"
+                Margin="3"
+                 />
+            <Button 
+                Grid.Row="1"
+                Grid.Column="4"   
+                HorizontalOptions="Center"
+                WidthRequest="40" 
+                HeightRequest="40" 
+                BorderRadius="10"
+                Text="M"
+                Command="{Binding CharacterPressedCommand}"
+                CommandParameter="M"
+                TextColor="White"   
+                 BackgroundColor="#1E1E1E"
+                Margin="3"
+                 />
+            <Button 
+                Grid.Row="1"
+                Grid.Column="5"   
+                HorizontalOptions="Center"
+                WidthRequest="40" 
+                HeightRequest="40" 
+                BorderRadius="10"
+                Text="N"
+                Command="{Binding CharacterPressedCommand}"
+                CommandParameter="N"
+                TextColor="White"   
+                 BackgroundColor="#1E1E1E"
+                 Margin="3"
+                 />
+            <Button 
+                Grid.Row="1"
+                Grid.Column="6"   
+                HorizontalOptions="Center"
+                WidthRequest="40" 
+                HeightRequest="40" 
+                BorderRadius="10"
+                Text="O"
+                Command="{Binding CharacterPressedCommand}"
+                CommandParameter="O"
+                TextColor="White"   
+                 BackgroundColor="#1E1E1E"
+                Margin="3"   
+                 />
+            <Button 
+                Grid.Row="1"
+                Grid.Column="7"   
+                HorizontalOptions="Center"
+                WidthRequest="40" 
+                HeightRequest="40" 
+                BorderRadius="10"
+                Text="P"
+                Command="{Binding CharacterPressedCommand}"
+                CommandParameter="P"
+                TextColor="White"   
+                BackgroundColor="#1E1E1E"
+                 Margin="3"
+                 />
+            <Button 
+                Grid.Row="2"
+                Grid.Column="0"   
+                HorizontalOptions="Center"
+                WidthRequest="40" 
+                HeightRequest="40" 
+                BorderRadius="10"
+                Text="R"
+                Command="{Binding CharacterPressedCommand}"
+                CommandParameter="R"
+                TextColor="White"   
+                 BackgroundColor="#1E1E1E"
+                Margin="3"    
+                 />
+            <Button 
+                Grid.Row="2"
+                Grid.Column="1"   
+                HorizontalOptions="Center"
+                WidthRequest="40" 
+                HeightRequest="40" 
+                BorderRadius="10"
+                Text="S"
+                Command="{Binding CharacterPressedCommand}"
+                CommandParameter="S"
+                TextColor="White"   
+                 BackgroundColor="#1E1E1E"
+                 Margin="3"   
+                 />
+            <Button 
+                Grid.Row="2"
+                Grid.Column="2"   
+                HorizontalOptions="Center"
+                WidthRequest="40" 
+                HeightRequest="40" 
+                BorderRadius="10"
+                Text="T" 
+                Command="{Binding CharacterPressedCommand}"
+                CommandParameter="T"
+                TextColor="White"   
+                 BackgroundColor="#1E1E1E"
+                Margin="3"
+                 />
+            <Button 
+                Grid.Row="2"
+                Grid.Column="3"   
+                HorizontalOptions="Center"
+                WidthRequest="40" 
+                HeightRequest="40" 
+                BorderRadius="10"
+                Text="U"
+                Command="{Binding CharacterPressedCommand}"
+                CommandParameter="U"
+                TextColor="White"   
+                 BackgroundColor="#1E1E1E"
+                 Margin="3"
+                 />
+            <Button 
+                Grid.Row="2"
+                Grid.Column="4"   
+                HorizontalOptions="Center"
+                WidthRequest="40" 
+                HeightRequest="40" 
+                BorderRadius="10"
+                Text="V"
+                Command="{Binding CharacterPressedCommand}"
+                CommandParameter="V"
+                TextColor="White"   
+                 BackgroundColor="#1E1E1E"
+                Margin="3"
+                 />
+            <Button 
+                Grid.Row="2"
+                Grid.Column="5"   
+                HorizontalOptions="Center"
+                WidthRequest="40" 
+                HeightRequest="40" 
+                BorderRadius="10"
+                Text="X"
+                Command="{Binding CharacterPressedCommand}"
+                CommandParameter="X"
+                TextColor="White"   
+                 BackgroundColor="#1E1E1E"
+                Margin="3"
+                 />
+            <Button 
+                Grid.Row="2"
+                Grid.Column="6"   
+                HorizontalOptions="Center"
+                WidthRequest="40" 
+                HeightRequest="40" 
+                BorderRadius="10"
+                Text="Y"
+                Command="{Binding CharacterPressedCommand}"
+                CommandParameter="Y"
+                TextColor="White"   
+                 BackgroundColor="#1E1E1E"
+                Margin="3"
+                 />
+            <Button 
+                Grid.Row="2"
+                Grid.Column="7"   
+                HorizontalOptions="Center"
+                WidthRequest="40" 
+                HeightRequest="40" 
+                BorderRadius="10"
+                Text="Z"
+                Command="{Binding CharacterPressedCommand}"
+                CommandParameter="Z"
+                TextColor="White"   
+                 BackgroundColor="#1E1E1E"
+                Margin="3"
+                 />
+        </Grid>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Obesenec.MainMenu" BackgroundColor="#121212">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Image Source="TITULFOTKA.png"/>
+        </Grid>
+        <Label Grid.Row="1" Text="Vyberte si kategóriu:" TextColor="White" HorizontalOptions="CenterAndExpand" />
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Button Grid.Row="0" Text="Doprava" Clicked="Doprava_Button_Clicked" TextColor="White" BackgroundColor="#1E1E1E" BorderRadius="20" BorderWidth="10" Margin="10, 3, 10, 3" />
+            <Button Grid.Row="1"  Text="Jedlo" Clicked="Jedlo_Button_Clicked"  TextColor="White" BackgroundColor="#1E1E1E" BorderRadius="20" BorderWidth="10" Margin="10, 3, 10, 3" />
+            <Button Grid.Row="2"  Text="Oblečenie" Clicked="Oblecenie_Button_Clicked"  TextColor="White" BackgroundColor="#1E1E1E" BorderRadius="20" BorderWidth="10" Margin="10, 3, 10, 3" />
+            <Button Grid.Row="3"  Text="MIX" Clicked="Mix_Button_Clicked" TextColor="White" BackgroundColor="#1E1E1E" BorderRadius="20" BorderWidth="10" Margin="10, 3, 10, 5"  />
+        </Grid>
+ </Grid>
+</ContentPage>
